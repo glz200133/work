@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\button.o
+./release\towerparent.o
+./release\monster.o
+./release\towerson1.o
+./release\bullet.o
+./release\towerspot.o
+./release\gamewindow.o
+./release\qrc_3.o
+./release\moc_mainwindow.o
+./release\moc_button.o
+);
