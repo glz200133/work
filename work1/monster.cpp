@@ -1,6 +1,7 @@
 #include "monster.h"
 #include <QDebug>
-
+#include<Qpoint>
+#include<QPainter>
 monster::monster(CoorStr **arr, int length, int x, int y, int fid) :
     mx(x), my(y), id(fid)
 {
@@ -13,29 +14,29 @@ monster::monster(CoorStr **arr, int length, int x, int y, int fid) :
     switch (id)
     {
     case 1:
-        health = 100;   //生命值
+        health = 310;   //生命值
         mwidth = 64, mheight = 64;  //宽高
-        //ImgPath = ":/image/monster1.png";图片的路径，但现在还没有设置
+        ImgPath = ":/monster1.png";//图片的路径，但现在还没有设置
         break;
     case 2:
-        health = 120;
-        mwidth = 86, mheight = 64;
-        //ImgPath = 同上
+        health = 310;
+        mwidth = 80, mheight = 80;
+        ImgPath = ":/monster2.png";
         break;
     case 3:
-        health = 650;
-        mwidth = 160, mheight = 120;
-        //ImgPath = 同上
+        health = 310;
+        mwidth = 80, mheight = 80;
+        ImgPath = ":/monster3.png";
         break;
     case 4:
         health = 310;
-        mwidth = 98, mheight = 70;
-        //ImgPath = 同上
+        mwidth = 80, mheight = 80;
+        ImgPath = ":/monster4.png";
         break;
     case 5:
-        health = 200;
-        mwidth = 90, mheight = 76;
-        //ImgPath = "同上
+        health = 310;
+        mwidth = 80, mheight = 80;
+        ImgPath = ":/monster5.png";
         break;
     default:
         break;
@@ -73,7 +74,8 @@ bool monster::Move()
         return false;
     }
 
-    //如果怪物的坐标和路径点坐标几乎重合，则删除这个路径点
+    //如果怪物的坐标
+    //路径点坐标几乎重合，则删除这个路径点
     if (Waypoint.at(0)->y == my && Waypoint.at(0)->x == mx)
     {
 

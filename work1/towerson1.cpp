@@ -4,16 +4,16 @@
 towerson1::towerson1(int x, int y, int sUpLeftX, int sUpLeftY, int swidth, int sheight)
 {
     mx = x, my = y;
-    baseimg = QString("//");//这里面写图片的路径
-    towimg = QString("");//格式如下:/image/GreenBottle.png
+    baseimg = QString(":/set.png");
+    towimg = QString(":/tower1.png");
     width = swidth, height = sheight;
     upx = sUpLeftX, upy = sUpLeftY;
 
-    range = 170;
+    range = 150;
 
-    BullPath = QString("");//子弹的图片格式如下:/image/Shells0.png
-    bullwidth = 25, bullheight = 25;           //子弹大小
+    BullPath = QString(":/bullet1.png");
+    bullwidth = 40, bullheight = 40;           //子弹图片大小
 
-    attack = 31;
+    attack = 310;
 
 }

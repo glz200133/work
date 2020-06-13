@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>selectbutton.png</file>
+    </qresource>
+</RCC>

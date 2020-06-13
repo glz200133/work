@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rankup.png</file>
+        <file>set.png</file>
+    </qresource>
+</RCC>

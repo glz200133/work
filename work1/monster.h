@@ -4,6 +4,7 @@
 #include <QVector>
 #include <QString>
 #include"mainstruct.h"
+#include<QPainter>
 class monster
 {
 
@@ -22,7 +23,7 @@ public:
     monster(CoorStr **arr, int length, int x, int y, int fid);  //构造
 
     bool Move();            //怪物移动函数
-
+    void Drawhealthbar(QPainter*painter);
     int GetX() const;       //获取横坐标
     int GetY() const;       //获取横坐标
     int GetWidth() const;   //获取宽

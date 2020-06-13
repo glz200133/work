@@ -30,9 +30,13 @@ SOURCES += \
     towerparent.cpp \
     monster.cpp \
     towerson1.cpp \
-    bullet.cpp \
     towerspot.cpp \
-    gamewindow.cpp
+    gamewindow.cpp \
+    selectbutton.cpp \
+    bullet.cpp \
+    towerson2.cpp \
+    towerson3.cpp \
+    towerson4.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -41,14 +45,26 @@ HEADERS += \
     monster.h \
     mainstruct.h \
     towerson1.h \
-    bullet.h \
     towerspot.h \
-    gamewindow.h
+    gamewindow.h \
+    selectbutton.h \
+    bullet.h \
+    towerson2.h \
+    towerson3.h \
+    towerson4.h
 
 FORMS += \
         mainwindow.ui
 
 RESOURCES += \
-    3.qrc
+    3.qrc \
+    4.qrc \
+    5.qrc \
+    6.qrc \
+    10.qrc \
+    14.qrc \
+    16.qrc \
+    19.qrc \
+    20.qrc
 
 

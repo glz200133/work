@@ -29,8 +29,8 @@ struct CoorStr
 struct BulletStr
 {
     CoorStr coor;       //子弹坐标
-    int k = 0, b = 0;   //用于计算出子弹路径函数
-    bool dirflag = false;   //移动方向标识
+    int k = 0, b = 0;
+    bool dirflag = false;
 
     BulletStr(CoorStr fcoor) : coor(fcoor) {}
 

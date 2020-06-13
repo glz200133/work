@@ -8,6 +8,7 @@
 #include<QDebug>
 #include"button.h"
 #include"gamewindow.h"
+
 //开始界面
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,28 +18,21 @@ MainWindow::MainWindow(QWidget *parent) :
 
     setWindowTitle("开始界面");
     //关卡数量
-    const int NumLe = 3;
+    const int Num = 3;
 
     //按钮数组
-    QPushButton* btnarr[NumLe] = {ui->pushButton, ui->pushButton_2, ui->pushButton_3};
+    QPushButton* btn[Num] = {ui->pushButton, ui->pushButton_2, ui->pushButton_3};
 
-    for (int i = 0; i < NumLe; i++)
-        connect(btnarr[i], &QPushButton::clicked,this, [=]()
+    for (int i = 0; i < Num; i++)
+        connect(btn[i], &QPushButton::clicked,this, [=]()
         {
              this->close();
-            QMainWindow *gamewindow = new QMainWindow;
+
+            GameWindow *gamewindow = new GameWindow(i);
+
             gamewindow->show();     //显示窗口
         });
-    //button*btn=new button(":/1.jpg");
-    //this->setFixedSize(1080,1440);
-   //btn->setParent(this);
 
-    //btn->move(800,100);
-
-    //connect(btn,&button::clicked,this,[=](){
-       //
-
-   // });
 }
 
 MainWindow::~MainWindow()
@@ -49,6 +43,6 @@ void MainWindow::paintEvent(QPaintEvent*)
 {
     QPainter painter(this);
 
-    painter.drawPixmap(0,0,QPixmap (":/1.jpg"));
+    painter.drawPixmap(0,0,QPixmap (":/anime/anime1.jpg"));
 
 }
