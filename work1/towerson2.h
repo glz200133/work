@@ -2,7 +2,8 @@
 #define TOWERSON2_H
 
 #include "towerparent.h"
-class towerson2:public towerparent
+
+class towerson2: public towerparent
 {
 public:
     towerson2(int x, int y, int sUpLeftX, int sUpLeftY, int swidth = 80, int sheight = 80);

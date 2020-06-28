@@ -38,13 +38,13 @@ void Selectbutton::SetDisplay(const bool SetPlay)
     display = SetPlay;
 }
 
-//选中防御塔
+
 void Selectbutton::CheckTower(int x, int y)
 {
     //确定选择框的位置
     mx = x - 95, my = y - 95;
 
-    //确定子按钮的位置
+
     SubBut[0].SubX = mx + 106, SubBut[0].SubY = my + 35;
     SubBut[0].SubImgPath = QString(":/tower1.png");
 

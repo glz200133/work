@@ -55,25 +55,9 @@ int& towerparent::SetRange() //设置防御塔的攻击范围
 {
     return range;
 }
-monster* towerparent::GetAimsMonster() const //返回当前防御塔的目标怪物
-{
-    return aimmonster;
-}
 
-void towerparent::SetAimsMonster(monster* mon)  //设置当前防御塔的目标怪物
-{
-    aimmonster = mon;
-}
-int towerparent::GetUpLeftX() const
-{
-    return upx;
-}
 
-int towerparent::GetUpLeftY() const
-{
-    return upy;
-}
-QString towerparent::GetBulletPath() const      //返回防御塔子弹图片路径，在防御塔子类中实现
+ QString towerparent::GetBulletPath() const      //返回防御塔子弹图片路径，在防御塔子类中实现
 {
     return BullPath;
 }
@@ -120,7 +104,7 @@ void towerparent::InterBullet()     //新建子弹函数
 
 void towerparent::BulletMove()         //子弹移动函数
 {
-    //子弹移动,重点项目，虽然编译能通过，但好像有bug
+
     for(auto bulli : BulletVec)  //遍历子弹组
     {
         const int speed = 24;              //子弹移动速度，每一次刷新画面移动的像素距离，这个值可以随意
@@ -164,5 +148,22 @@ void towerparent::SetBulletWidthHeight(int width, int height)         //设置�
 {
     bullwidth = width, bullheight = height;
 }
+monster* towerparent::GetAimsMonster() const //返回当前防御塔的目标怪物
+{
+    return aimmonster;
+}
 
+void towerparent::SetAimsMonster(monster* mon)  //设置当前防御塔的目标怪物
+{
+    aimmonster = mon;
+}
+int towerparent::GetUpLeftX() const
+{
+    return upx;
+}
+
+int towerparent::GetUpLeftY() const
+{
+    return upy;
+}
 

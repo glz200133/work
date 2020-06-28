@@ -20,22 +20,22 @@ monster::monster(CoorStr **arr, int length, int x, int y, int fid) :
         break;
     case 2:
         health = 310;
-        mwidth = 80, mheight = 80;
+        mwidth = 64, mheight = 64;
         ImgPath = ":/monster2.png";
         break;
     case 3:
         health = 310;
-        mwidth = 80, mheight = 80;
+        mwidth = 64, mheight = 64;
         ImgPath = ":/monster3.png";
         break;
     case 4:
         health = 310;
-        mwidth = 80, mheight = 80;
+        mwidth =64 , mheight = 64;
         ImgPath = ":/monster4.png";
         break;
     case 5:
         health = 310;
-        mwidth = 80, mheight = 80;
+        mwidth = 64, mheight = 64;
         ImgPath = ":/monster5.png";
         break;
     default:
@@ -126,4 +126,14 @@ int monster::GetHealth() const  //获取生命值
 void monster::SetHealth(int fhealth)//设置生命值
 {
     health = fhealth;
+}
+int monster::GetSpeed()const
+{
+
+    return mspeed;
+}
+
+void monster::SetSpeed(int sp)
+{
+    mspeed=sp;
 }

@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>80</y>
+      <y>190</y>
       <width>93</width>
-      <height>51</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -36,10 +36,10 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>80</y>
-      <width>101</width>
-      <height>51</height>
+      <x>20</x>
+      <y>280</y>
+      <width>91</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -49,40 +49,14 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>80</y>
-      <width>101</width>
-      <height>51</height>
+      <x>20</x>
+      <y>370</y>
+      <width>91</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
      <string>Game3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>20</y>
-      <width>201</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>甘霖泽的塔防小游戏♂</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>210</y>
-      <width>101</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>为了爱与正义！</string>
     </property>
    </widget>
   </widget>

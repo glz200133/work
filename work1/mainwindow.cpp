@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+setFixedSize(1080, 608);
     setWindowTitle("开始界面");
     //关卡数量
     const int Num = 3;
@@ -43,6 +43,6 @@ void MainWindow::paintEvent(QPaintEvent*)
 {
     QPainter painter(this);
 
-    painter.drawPixmap(0,0,QPixmap (":/anime/anime1.jpg"));
+    painter.drawPixmap(0,0,QPixmap (":/anime5.jpg"));
 
 }

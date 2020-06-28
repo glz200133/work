@@ -33,10 +33,12 @@ SOURCES += \
     towerspot.cpp \
     gamewindow.cpp \
     selectbutton.cpp \
-    bullet.cpp \
     towerson2.cpp \
     towerson3.cpp \
-    towerson4.cpp
+    towerson4.cpp \
+    failwindow.cpp \
+    winwindow.cpp \
+    stilltower.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -48,10 +50,12 @@ HEADERS += \
     towerspot.h \
     gamewindow.h \
     selectbutton.h \
-    bullet.h \
     towerson2.h \
     towerson3.h \
-    towerson4.h
+    towerson4.h \
+    failwindow.h \
+    winwindow.h \
+    stilltower.h
 
 FORMS += \
         mainwindow.ui
@@ -65,6 +69,15 @@ RESOURCES += \
     14.qrc \
     16.qrc \
     19.qrc \
-    20.qrc
+    20.qrc \
+    map.qrc \
+    fail.qrc \
+    24.qrc \
+    vic.qrc \
+    bullet.qrc \
+    music.qrc \
+    back.qrc \
+    delete.qrc
 
-
+QT+=multimedia
+CONFIG+=resources_big

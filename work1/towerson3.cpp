@@ -10,9 +10,9 @@ towerson3::towerson3(int x, int y, int sUpLeftX, int sUpLeftY, int swidth, int s
 
     range = 150;
 
-    BullPath = QString(":/bullet1.png");
-    bullwidth = 50, bullheight = 50;           //子弹大小
+    BullPath = QString(":/bullet4.png");
+    bullwidth = 30, bullheight = 30;           //子弹大小
 
-    attack = 310;
+    attack = 400;
 
 }
