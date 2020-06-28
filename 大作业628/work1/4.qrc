@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/anime">
+        <file>anime1.jpg</file>
+        <file>anime2.jpeg</file>
+        <file>anime3.jpg</file>
+    </qresource>
+</RCC>
